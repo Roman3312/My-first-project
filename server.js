@@ -21,7 +21,6 @@ const server = http.createServer(function (request,responce) {
     const html = fs.readFileSync('indexmove.html','utf8');
    responce.end(html);
 });
-
-
-server.listen(3000);
+        //console.log('port =',process.evn.PORT);
+server.listen(process.evn.PORT);
 console.log('Server started');
