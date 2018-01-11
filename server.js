@@ -8,10 +8,10 @@ const server = http.createServer(function (request,responce) {
     } else if (request.url == '/scriptmove.js'){
         const script = fs.readFileSync('scriptmove.js','utf8');
         responce.end(script);
-    } else if (request.url == '/favicon.ico'){
+    }/* else if (request.url == '/favicon.ico'){
         const favicon = fs.readFileSync('favicon.ico');
         responce.end(favicon);
-    } else {
+    }*/ else {
         const html = fs.readFileSync('indexmove.html','utf8');
         responce.end(html);
     }
