@@ -25,5 +25,5 @@ const server = http.createServer(function (req,res) {
    res.end(html);
 });
   //server.listen(3000)
- server.listen(process.evn.PORT);
+ server.listen(parseInt(port));
  console.log('Server started');
